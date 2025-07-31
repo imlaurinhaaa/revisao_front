@@ -15,7 +15,7 @@ export default function HomePage() {
       />
       <p className={styles.texto}>Esta é a página inicial do nosso site. Aqui você pode encontrar informações sobre nossos serviços e produtos.</p>
       <button className={styles.botao}>
-        <Link href="/sobre">Saiba Mais Sobre Nós</Link>
+        <Link href="/sobre">Saiba Mais Sobre</Link>
       </button>
     </div>
   );
