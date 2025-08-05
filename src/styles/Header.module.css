@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comic-relief-bold {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: row;
+}
+
+.logo {
+    margin-bottom: 10px;
+    margin-left: 3rem;
+}
+
+.title {
+    width: 80%;
+	font-size: 1.8rem;
+	font-weight: 800;
+    font-family: "Comic Relief", system-ui;
+	color: #ff24a0;
+	margin-left: 0.8rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menuItem {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #ff24a0;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 16px;
+    transition: all 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.menuItem:hover {
+    color: #ffffff;
+    background-color: #ff24a0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(254, 110, 175, 0.15);
+    cursor: pointer;
+}

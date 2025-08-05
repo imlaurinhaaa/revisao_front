@@ -1,11 +1,22 @@
 import React from "react";
+import Image from "next/image";
+import styles from "./Home.module.css";
+import Header from "../../components/Header";
 
-export default function Sobre() {
+export default function Home() {
     return (
-        <div style={{ padding: "20px", backgroundColor: "#ff24a0ba", borderRadius: "10px", maxWidth: "800px", margin: "0 auto" }}>
-            <h1 style={{ color: "#ffffff", fontSize: "2rem", marginBottom: "1rem", textAlign: "center" }} >Sobre</h1>
-            <p style={{ color: "#ffffff", margin: "10px 0", fontSize: "1rem" }}>Esta é a página Sobre do nosso site.</p>
-            <p style={{ color: "#ffffff", margin: "10px 0", fontSize: "1rem" }}>Você pode adicionar mais informações aqui.</p>
+        <div className={styles.container}>
+            <Header />
+            <div className={styles.banner}>
+                <Image
+                    className={styles.bannerImage}
+                    src="/image/banner.png"
+                    alt="Banner de Crochê"
+                    width={1200}
+                    height={520}
+                    priority
+                />
+            </div>
         </div>
     );
 }
