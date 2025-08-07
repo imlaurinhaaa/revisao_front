@@ -1,8 +1,21 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Welcome.module.css';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { useUser } from '../../contexts/UserContext';
 
 export default function Welcome() {
+  const [name, setName] = useState('');
+  const { setUsername } = useUser();
+  const router = useRouter();
+
+  const handleName = () => {
+    setUsername(name);
+    router.push('/home');
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -19,10 +32,12 @@ export default function Welcome() {
         </p>
         <input
           type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           className={styles.input}
           placeholder="Digite seu nome"
         />
-        <Link href="/home" className={styles.button}>
+        <Link href="/home" onClick={handleName} className={styles.button}>
           Acessar
         </Link>
         </div>
